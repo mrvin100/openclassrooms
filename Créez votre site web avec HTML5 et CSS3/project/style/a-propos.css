@@ -1,0 +1,61 @@
+
+/* custom css file made by youmssi vincent */
+
+/* A propos main page */
+
+.carre_contenu{
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding: 50px;
+}
+
+.carre_contenu h2{
+    margin-top: 30px;
+}
+
+.carre_contenu ul{
+    margin-top: 30px;
+}
+
+.carre_contenu + div{
+    text-align: center;
+}
+
+.a_propos_main{
+    margin: auto;
+    width: 50%;
+}
+
+table{
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{
+    padding: 50px;
+    border: 2px solid #8e86b5;
+}
+
+th{
+    padding: 10px;
+    border: 2px solid #8e86b5;
+}
+
+caption{
+    margin-bottom: 50px;
+}
+
+/* Media queries for medium screen */
+
+@media screen and (max-width: 996px){
+
+    .tarifs{
+        display: none;
+    }
+
+    .a_propos_main{
+        width: 100%;
+    }
+    
+}

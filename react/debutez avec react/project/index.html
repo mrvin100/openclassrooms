@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant store</title>
+</head>
+<body>
+<div id="root"></div>
+
+
+<!-- configs -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- main js code -->
+<script type="text/babel">
+    // Barnner component starts
+    function Banner(){
+    const title = 'plant store 🥳.';
+        return (<h1>{ title.toUpperCase() }</h1>)
+    }
+    // Cart component starts
+    function Cart(){
+        let prix1 = 8, prix2 = 10, prix3 = 15;
+        return (
+            <div>
+                <h2>Cart</h2>
+                <ul>
+                    <li>monstera : {prix1}€</li>
+                    <li>lierre : {prix2}€</li>
+                    <li>bouquet de fleurs : {prix3}€</li>
+                </ul>
+                <div>Total : {prix1 + prix2 + prix3}€</div>
+            </div>
+        )
+    }
+
+    ReactDOM.render(
+        <div><Banner /><Cart /></div>,
+        document.getElementById('root')
+    )
+</script>
+
+</body>
+</html>

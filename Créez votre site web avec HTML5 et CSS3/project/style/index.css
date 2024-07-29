@@ -1,0 +1,139 @@
+/* custom css file made by youmssi vincent */
+
+
+/* Accueil main page */
+
+.accueil_introduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    gap: 3rem;
+}
+
+.accueil_introduction img{
+    width: 100%;
+}
+
+.accueil_photos{
+    background: white;
+    padding: 80px;
+}
+.accueil_photos div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.accueil_photos img{
+    width: 100%;
+}
+
+.accueil_photos h2{
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+/* Contact form */
+
+.contact_section{
+    margin: auto;
+}
+
+.contact_section h2{
+    color: #8e86b5;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact_section form{
+    padding: 20px;
+}
+.contact_section form .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.contact_section form .col{
+    width: 100%;
+}
+.contact_section form label{
+    display: block;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contact_section form .input{
+    display: block;
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: .2rem;
+}
+.contact_section form input{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.contact_section form textarea:focus,
+.contact_section form .input:focus{
+    border: 1.5px solid red;
+}
+
+.contact_section form textarea{
+    width: 100%;
+    padding: 15px;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact_section form input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    margin: 50px auto;
+    padding: 20px 50px;
+    font-size: inherit;
+}
+
+
+/* Media queries for medium screen */
+
+
+@media screen and (max-width: 996px){
+    h2{
+        font-size: 2em;
+    }
+    .accueil_introduction,
+    .contact_section form{
+        max-width: 1000px;
+        width: auto;
+    }
+    .accueil_introduction{
+        flex-direction: column-reverse;
+    }
+    .accueil_photos img{
+        width: 100%;
+    }
+    .contact_section form .main{
+        flex-wrap: wrap;
+    }
+    .accueil_photos div{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .contact_section h2{
+        margin-bottom: 0px;
+    }
+    
+}
